@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+body {
+  margin: 0;
+  background-color: black;
+  color:whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.6%;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: gray;
+}
+
+.navbar a.active {
+  background-color: grey;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<body>
+
+<div class="center">
+    <h2>Title</h2>
+  </div>
+
+<div class="navbar">
+    <a href="Home">Home</a>
+    <a href="CS">Why be a CS Major</a>
+    <a href="Being">Being a CS Major</a>
+    <a href="Why">Why OC</a>
+    <a class="active" href="#learn">Learn More About CS</a>
+    <a href="About">About Us</a>
+</div>
+
+<div class="center">
+  <p2>YOUR WORK GOES BELOW NAVIGATION BAR!</p2>
+</div>
+
+</body>
+</html> 
