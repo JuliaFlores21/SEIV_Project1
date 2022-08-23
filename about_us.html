@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta charset="UTF-8" />
+        <title>About us</title>
+    </head>
+
+        <div class="center">
+            <h2>About us</h2>
+        </div>
+
+        <body id="page-top">
+            <!-- Navigation-->
+            <nav class="navbar">
+                <a href="home-page.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn"> <link href = "why-cs-major.html"/>Why be a CS Major?</button>
+                    <div class="dropdown-content">
+                        <a href="why-cs-major.html">Why CS?</a> 
+                        <a href="job-salary.html">Jobs & Salary</a> 
+                    </div>
+                </div>
+                <a href="being_cs.html">Being a CS Major</a>
+                <div class="dropdown">
+                    <button class="dropbtn"> <link href = "why.html"/>Why OC</button>
+                    <div class="dropdown-content">
+                        <a href="why.html">More Info on OC</a>
+                        <a href="undergraduates.html">Undergraduate</a>
+                        <a href="graduates.html">Graduate</a>
+                    </div>
+                </div>
+                <a href="Learn.html">Learn More About CS</a>
+                <a href="about_us.html">About Us</a>
+            </nav>
+
+
+        <br><br><br><img class = "img_org" src ="images/justin.JPG" width="130px" height="160px" alt="Justin's picture">
+        <br><h5 class = "left_text">Hello! I am Justin Dail and am from Okinawa, Japan. I am studying Computer Science with Cybersecurity at OC since 2019. 
+            If there was one thing that I whish I knew before I started studying Computer Science it would be to not be cheap and grab 
+            a proper laptop in my freshman year.</h5>
+
+            <div class = "line" style="width: 55%; margin: auto; margin-top: 5%;"></div>
+        
+        
+        <br><br><br><br><img class = "img_org" src ="images/julia.JPG" width="130px" height="165px" alt="Julia's picture">
+                <h5 class = "left_text">Hi! I am Julia Flores and am from Rio de Janeiro, Brazil. I started studying Computer Science (CS) at Oklahoma Christian University (OC) in 
+                Spring 2021 and I am loving it! I am a senior now, I work as an IT Support Technician at OC and am going to get a master 
+                in CS with Cybersecurity. If I could give a tip for someone who is studying CS, I would say to 
+                in addition to doing the assignments proposed by the professors, be interested and seek to carry out personal projects or for 
+                extra information. Enriching your knowledge is a valuable tool for the job market.</h5>
+               
+                <div class = "line" style="width: 55%; margin: auto; margin-top: 5%;"></div>
+
+        <br><br><img class = "img_org" src ="images/carl.JPG" width="130px" height="160px" alt="Carl's picture">
+            <h5 class = "left_text">I am Carl Jackson and and from San Antonio, Texas. I am studying to receive my Bachelors in Computer Science with 
+            Business and Masters in Software Engineering. If there was one thing I wished to know before starting down this degree
+             path it would that I actual studied CS before coming to college so I wouldn't have been playing catch up with more 
+             experience people. </h5>
+
+             <div class = "line" style="width: 55%; margin: auto; margin-top: 5%;"></div>
+        
+        <br><br><img class = "img_org" src ="images/dustin.JPG" width="130px" height="160px" alt="Dustin's picture">
+            <h5 class = "left_text"><br>My name is Dustin Ortiz and I am majoring in Computer Science with Cybersecurity. I am one of the Lead IT Technicians 
+            at Oklahoma Christian University. I am passionate about information technology and cybersecurity. Not that passionate about
+             programming but here I am. Go learn cybersecurity more than programming! </h5>
+        
+             <div class = "line" style="width: 55%; margin: auto; margin-top: 5%;"></div>
+        
+        <br><br><br>
+        <p class="center">Let us know if you have any question or suggestions! Submit this form and we will be more than happy to help you!
+        <br><br><label for="fname">First name: </label> <input type="text" id="fname" name="fname">
+        <br><br><label for="lname">Last name: </label> <input type="text" id="lname" name="lname">
+        <br><br><label for="email">Email: </label> &emsp;&emsp;<input type="text" id="email" name="email">
+        <br><br><label for="question">Suggestion/Question: </label> 
+        <br><br><textarea name="question" id="question" cols="34" rows="11"></textarea>
+
+        </p>
+        <div class="center">
+        
+        <br><button class="buttom_style" type="button" onclick="validateForm()">Submit</button></p>
+    
+        <br>
+       
+            <p class="msg_style" id="demo">&emsp;</p>
+            
+        </div>
+
+    
+ 
+
+<script>
+    function validateForm() {
+        let first = document.getElementById("fname").value;
+        let last = document.getElementById("lname").value;
+        let contact = document.getElementById("email").value;
+        let suggestion = document.getElementById("question").value;
+        let text;
+        if (first=="" || last=="" || contact == "" || suggestion=="") {
+            text = "Please complete all the fields";
+        } 
+        else {
+            text = "Thank you for contacting us!";
+        } 
+        document.getElementById("demo").innerHTML = text;
+    }
+</script> 
+</body>
+</html> 
